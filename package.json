@@ -1,0 +1,54 @@
+{
+  "name": "@greenrenge/request",
+  "version": "1.0.0",
+  "description": "request promise helper tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha 'test/**/*.test.js' --require ./test/setup.js",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Greenrenge/request.git"
+  },
+  "author": "Kitthanat S.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Greenrenge/request/issues"
+  },
+  "homepage": "https://github.com/Greenrenge/request#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chaid": "^1.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-mocha": "^6.2.2",
+    "eslint-plugin-prettier": "^3.1.2",
+    "lint-staged": "^10.0.3",
+    "mocha": "^7.0.1",
+    "mocked-env": "^1.3.2",
+    "prettier": "^1.19.1",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0"
+  },
+  "dependencies": {
+    "deasync": "^0.1.20",
+    "debug": "^4.2.0",
+    "tough-cookie": "^4.0.0"
+  }
+}
