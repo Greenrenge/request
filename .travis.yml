@@ -1,10 +1,11 @@
 language: node_js
 node_js:
-- '10'
+  - "10"
 script:
-- npm run test
+  - npm run test
 deploy:
   provider: npm
+  access: public
   skip_cleanup: true
   email: greenrenge@gmail.com
   api_key:
