@@ -5,7 +5,7 @@ script:
   - npm run test
 deploy:
   provider: npm
-  access: public
+  # access: public # travis v2 only
   skip_cleanup: true
   email: greenrenge@gmail.com
   api_key:

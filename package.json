@@ -17,6 +17,9 @@
   "bugs": {
     "url": "https://github.com/Greenrenge/request/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/Greenrenge/request#readme",
   "husky": {
     "hooks": {
