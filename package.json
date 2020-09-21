@@ -1,6 +1,6 @@
 {
   "name": "@greenrenge/request",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "request promise helper tools",
   "main": "index.js",
   "scripts": {
